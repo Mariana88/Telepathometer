@@ -45,6 +45,7 @@ __As a Telepathic Person I can:__
   * preferred timezone
  * Log in as I return to the application
  * View and manipulate my stored data as I return to the application
+ * Delete my account
 
 * Be ensured that my personal data will be protected
  * Be informed that data will never be sold or made available to any third party
