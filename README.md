@@ -8,7 +8,7 @@ Select a person by entering their full name or email. Enter the date and time of
 
 All information you enter here is primarily visible only to you. Only when a "telepathy event" happens and the other person also thinks about you, either at the same time or over a similar topic, both of you will be able to see the information related to only those specific thoughts which were part of the event.
 
-# Users and User Stories
+# General System Behaviour, Users and User Stories
 
 ## Users
 
@@ -95,21 +95,41 @@ tbd
 
 # Functional Requirements
 
-Requirement # | Description | Related User Story | Targeted Version
+Requirement Id | Description | Related User Story | Targeted Version
 --- | --- | --- | ---
 A | User Management
-A.1 | Add user (first and last name - email - password) | | 0.0
-A.2 | Login | | 0.0
-A.3 | Update profile info (first/last name, email) | |
-A.4 | Add message | | 
-A.4.1 | Add target person[1] | | 
-A.4.1.1 | Add target person (by name and/or email) | |
-A.4.2 | Add target person by selecting from existing user base | |
-A.4.3 | Add message date | | 
-A.4.4 | Add message time | | 
-A.4.4.1 | Add timezone specific message time | |
+A.1 | Add user (first and last name - email[2](#[2]) - password) | | 0.1
+A.1.1 | A user must be required to verify email in order to register | |
+A.2 | Login | | 0.1
+A.3 | Update profile info (first/last name, email, password) | | 0.1
+A.4 | Display profile info | | 0.1
+B.1 | Add message | | 
+B.1.1 | Add target person[1](#[1]) | | 
+B.1.1.1 | Add target person (by name and/or email) | |
+B.1.1.2 | Add target person by selecting from existing user base | |
+B.1.2 | Add message date | | 
+B.1.3 | Add message time | | 
+B.1.3.1 | Add timezone specific message time | |
 
+
+# Release Plan
+
+Version | Added Functionality | ETA
+--- | --- | ---
+0.0 | User management from console | 29/04/2018
+0.1 | User management in UI | 29/04/2018
+1.0 | Teleathic message editing from console | 30/04/2018
+1.1 | Telepathic message editing from UI | 
+2.1 | Telepathy event calculation |
+2.2 | Telepahy event display in UI
 
 # General Specs
 
-[1] A target person is the person who a telepathic message (thought) is about
+##[1] 
+A target person is the person who a telepathic message (aka "thought") is about.
+##[2]
+An email must be unique to 1 single user. Only 1 user per email allowed.
+
+# Project TO DOs
+
+* Transform test scripts into tiny tests (or some other form of automatically executable tests)
