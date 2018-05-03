@@ -73,5 +73,5 @@ function changePassword (id, password){
     return updatedUser;
 }
 
-
+module.exports = userManagement;
 
