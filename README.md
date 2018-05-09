@@ -87,7 +87,7 @@ __As a Telepathic Person I can:__
  * view who the person involved in the event is
   * be able to navigate to the person's profile
  * view which telephatic messages were involved in the event
-  * be able to navigate trough the contect of each specific message involved
+  * be able to navigate trough the content of each specific message involved
 
 ### Telepathy Researcher Stories
 
@@ -117,8 +117,8 @@ B.1.3.1 | Add timezone specific message time | |
 Version | Added Functionality | ETA
 --- | --- | ---
 0.0 | User management from console | 29/04/2018
-0.1 | User management in UI | 29/04/2018
-1.0 | Teleathic message editing from console | 30/04/2018
+0.1 | User management in console and UI with MVC architecture, persisting to JSON file| 11/05/2018
+1.0 | Teleathic message editing from console |
 1.1 | Telepathic message editing from UI | 
 2.1 | Telepathy event calculation |
 2.2 | Telepahy event display in UI

@@ -63,5 +63,19 @@ tressa.assert(
 	"nextId correctly incremented");
 
 
+tressa.title("Attempting to add user with same email");
+user = {firstName: 'Fake Mariana', lastName: 'Casella', email: 'marianacasella@gmail.com', password: 'gatinha'};
+	tressa.assert(
+		userManagement.addUser (user) == 'Email already in use', 
+		"alert for pre-existing email");
+
+/* example from Evan on how to combine libraries
+	var proclaimed = proclaim.deepEqual(userManagement.read(0), {...} )
+	tressa.assert(
+		proclaimed === true, 
+		"nextId correctly incremented");*/
+
+
+
 
 
