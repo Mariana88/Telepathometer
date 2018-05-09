@@ -10,11 +10,16 @@ const model = {
         db.users.data = {};
         jsonfile.writeFileSync(path.join(__dirname, './db.json'), db);
     },
-    add: function(newItem) {
+    add: function(new_array) {
+        let newItem = {};
+        newItem.name = new_array[0];
+        newItem.type = new_array[1];
         let db = require('./db.json');
-        db[newItem.type].data[db[newItem.type].nextId] = newItem;
-        db[newItem.type].data[db[newItem.type].nextId].id = db[newItem.type].nextId;
-        db[newItem.type].nextId++;
+        let givenModel = db[newItem.type];
+        givenModel.data[givenModel.nextId] = newItem;
+        givenModel.data[givenModel.nextId].id = givenModel.nextId;
+        givenModel.nextId++;
+        db[newItem.type] = givenModel;
         jsonfile.writeFileSync(path.join(__dirname, '../db.json'), db)
     },
     
