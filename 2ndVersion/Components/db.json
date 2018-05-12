@@ -1,7 +1,1 @@
-{
-    "users":{
-        "nextID":0,
-        "type":"users",
-        "data":{}
-    }   
-}
+{"user":{"nextId":1,"type":"user","data":{"0":{"type":"user","firstName":"Mariana","lastName":"Casella","email":"marianacasella@gmail.com","password":"gatinha","id":0}}}}

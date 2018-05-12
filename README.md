@@ -113,12 +113,13 @@ B.1.3.1 | Add timezone specific message time | |
 
 
 # Release Plan
+(The goal of such a release plan is to incrementally learn to implement new architectures and programming features as I go along.)
 
 Version | Added Functionality | ETA
 --- | --- | ---
 0.0 | User management from console | 29/04/2018
 0.1 | User management in console and UI with MVC architecture, persisting to JSON file| 11/05/2018
-1.0 | Teleathic message editing from console |
+1.0 | Adds Teleathic message CRUD and service architecture |
 1.1 | Telepathic message editing from UI | 
 2.1 | Telepathy event calculation |
 2.2 | Telepahy event display in UI

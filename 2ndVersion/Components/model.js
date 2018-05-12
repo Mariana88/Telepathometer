@@ -4,23 +4,27 @@ let path = require('path');
 const model = {
     reinitialize: function() {
         let db = {};
-        db.users = {};
-        db.users.nextId = 0;
-        db.users.type = 'users';
-        db.users.data = {};
+        db.user = {};
+        db.user.nextId = 0;
+        db.user.type = 'user';
+        db.user.data = {};
         jsonfile.writeFileSync(path.join(__dirname, './db.json'), db);
     },
-    add: function(new_array) {
-        let newItem = {};
-        newItem.name = new_array[0];
-        newItem.type = new_array[1];
+    user: function (type, firstName, lastName, email, password) {
+            this.type = type;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.email = email;
+            this.password = password;
+    },
+    add: function (newItem) {
         let db = require('./db.json');
         let givenModel = db[newItem.type];
         givenModel.data[givenModel.nextId] = newItem;
         givenModel.data[givenModel.nextId].id = givenModel.nextId;
         givenModel.nextId++;
         db[newItem.type] = givenModel;
-        jsonfile.writeFileSync(path.join(__dirname, '../db.json'), db)
+        jsonfile.writeFileSync(path.join(__dirname, './db.json'), db)
     },
     
     
