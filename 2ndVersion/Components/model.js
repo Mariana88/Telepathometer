@@ -24,32 +24,31 @@ const model = {
         givenModel.data[givenModel.nextId].id = givenModel.nextId;
         givenModel.nextId++;
         db[newItem.type] = givenModel;
-        jsonfile.writeFileSync(path.join(__dirname, './db.json'), db)
+        jsonfile.writeFileSync(path.join(__dirname, './db.json'), db);
     },
-    
-    
-    
-/*    addUser: function (newUser){
-        let user;
-        for (user in this.users){
-         let email = this.users[user].email;
-         if (email == newUser.email) {
-                return "Email already in use";
-            }
+    update: function (input){
+        let db = require('./db.json');
+        let i;
+        for (i=2; i<input.length; i=i+2){
+            db[input[0]].data[input[1]][input[i]] = input[i + 1];
         }
-        newUser.id = this.nextId;
-        this.users[newUser.id] = newUser;
-        this.nextId++;
+        jsonfile.writeFileSync(path.join(__dirname, './db.json'), db);
     },
-    getUser: function (id){
-        return this.users[id];
+    delete: function (input){
+        let db = require('./db.json');
+        delete db[input[0]].data[input[1]];
+        jsonfile.writeFileSync(path.join(__dirname, './db.json'), db);
     },
-    updateUser: function (user){
-        this.users[user.id] = user;
+    getItem: function (input){
+        let db = require('./db.json');
+        let user = db[input[0]].data[input[1]];
+        return user;
     },
-    deleteUser: function (user){
-        delete this.users[user.id];
-    } */
+    getAll: function (input){
+        let db = require('./db.json');
+        let items = db[input].data;
+        return items;
+    },
  }
 
  module.exports = model;

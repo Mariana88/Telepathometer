@@ -1,40 +1,35 @@
 
-<html>
-    <script src="./solution.js"></script>
-    <script src="./tests/tinytest.js"></script>
-    <script src="./tests/test-cases.js"></script>
-		
-<!--	<head>
-  		<title>Try Marianas Awesome Code</title>
-	</head>
-	<body>
-        <div>
-            <h1>Try Mariana's Awesome Code</h1>
-           <form></form>
-                <input type="number" id="decimal" placeholder="Enter a decimal number" required>
-				<button type='button'id='BTconvertToBinary'>"Convert to Binary"</button>
-				<input type="text" id="binary">
-        	</form><br>
-            <form>
-                <input type="number" id="num1" placeholder="Enter a decimal number" required>
-                <input type="number" id="num2" placeholder="Enter a decimal number" required>
-				<button type='button'id='BTbinaryAddition'>"Give me Binary SUM"</button>
-				<input type="text" id="sum">
-            </form>
-        </div>
-	<div>
-		My learning goals with this project were two fold:<br>
-		 - learning about the intrinsic logic of binary (or another base) conversion <br>
-		 - learning to manipulate strings <br>
-		As such I have place the following <strong>constraints</strong> on my solution: <br>
-		 - <strong>not to use any inherent method to convert to binary</strong> <br>
-		 - <strong>convert the binary numbers to a string before adding them</strong> <br><br>
-		<a href="https://github.com/Mariana88/binary-addition" target="_blank">See my source code and project writeup</a>	
-		<br><br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Telepathometer</title>
+    <script src="./handler.js"></script>
+    <script>
+        window.onload = function() {
+            handler.setup();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="topMenu">
+		<input type="text" id="userName">
+    	<button type='button'id='login'>"Sign In"</button>
+		<button type='button'id='register'>"Sign Up"</button>		
 	</div>
-	<div>
-		(Inspect this page in your browser to see the test cases)
+	<div id="loginContainer">
+		<input type='email'id='email' placeholder="email">
+		<input type="password"id='password' placeholder="password">
 	</div>
-	<script src="handler.js"></script>
-    </body>
+	<div id="registerContainer">
+		<input type+'text'id='firstName' placeholder="First Name">
+		<input type+'text'id='lastName' placeholder="Last Name">
+<!--	<input type='email'id='email' placeholder="email">
+		<input type="password" id='password' placeholder="email"> -->
+	</div>
+</body>
 

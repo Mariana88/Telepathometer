@@ -4,9 +4,27 @@ An application which allows people to identify their events of telepathy with on
 # Getting Started
 
 # Utilizing the application
-Select a person by entering their full name or email. Enter the date and time of your thought about this person. Enter the subject of the thought. If the other person has entered a thought about you at the same date/time or about the same subject of a thought of yours about them, both of you will see the telepathy event.
+Sign in or login to the application.
+
+Create a telepathic message:
+Select a person by entering their full name or email. Enter the date and time of your thought about this person. Enter the subject of the thought.
+
+If the other person has entered a thought about you at the same date/time or about the same subject of a thought of yours about them, both of you will see the telepathy event.
 
 All information you enter here is primarily visible only to you. Only when a "telepathy event" happens and the other person also thinks about you, either at the same time or over a similar topic, both of you will be able to see the information related to only those specific thoughts which were part of the event.
+
+## From Console
+Cd into "Apps" folder and enter node app.js
+
+## Creating a new user
+Enter the following values in this order:
+create user 'user's first name' 'user's last name' 'user's email' 'user's password'
+
+## Updating a user
+Enter the following values in this order:
+update user 'the user Id' 'the property you want to update' 'new value'
+
+(Valid updatable properties are: firstName , lastName , email , password)
 
 # General System Behaviour, Users and User Stories
 

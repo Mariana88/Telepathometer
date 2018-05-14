@@ -1,1 +1,1 @@
-{"user":{"nextId":1,"type":"user","data":{"0":{"type":"user","firstName":"Mariana","lastName":"Casella","email":"marianacasella@gmail.com","password":"gatinha","id":0}}}}
+{"user":{"nextId":4,"type":"user","data":{"0":{"type":"user","firstName":"Mari","lastName":"Cas","email":"mari@gmail.com","password":"gatinha","id":0},"2":{"type":"user","firstName":"Stef","lastName":"why","email":"s@1.com","password":"yourkarma","id":2},"3":{"type":"user","firstName":"newMe","lastName":"loveable","email":"mari@me.com","password":"happy","id":3}}}}
